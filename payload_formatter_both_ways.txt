@@ -1,0 +1,13 @@
+function Decoder(bytes, port) { 
+  var parts = String.fromCharCode.apply(null, bytes).split('_');
+  
+  var part1 = parts[0];
+  var part2 = parts[1];
+  var part3 = parts[2];
+
+   return {
+    numberOfNodes: part1,
+    request: part2,
+    response: part3
+  };
+}
