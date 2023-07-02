@@ -56,5 +56,5 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_pre_connect = None
 client.on_message = on_message
-client.connect("broker.emqx.io", 1883, 60)
+client.connect("127.0.0.1", 1883, 60)
 client.loop_forever()
