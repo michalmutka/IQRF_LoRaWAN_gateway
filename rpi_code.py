@@ -29,7 +29,7 @@ def on_connect(client, userdata, flags, rc):
         print("Connected success")
     else:
         print(f"Connected fail with code {rc}")
-    client.subscribe("Iqrf/DpaResponse")
+    client.subscribe("Iqrf/DpaResponse1")
 
 def on_message(client, userdata, msg):
     tmp=0
